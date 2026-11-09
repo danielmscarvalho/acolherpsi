@@ -140,6 +140,10 @@ figcaption.caption{font-size:14px;line-height:1.6;color:var(--sage);text-align:c
 footer{text-align:center;padding:40px 24px;font-size:13px;line-height:1.7;color:var(--sage);background:var(--cream)}
 footer p+p{margin-top:6px;font-size:12px;opacity:.8}
 
+.grid.pillars{grid-template-columns:repeat(5,1fr)}
+.grid.pillars .card{padding:26px 20px}
+.grid.pillars .card h3{font-size:22px;line-height:1.15}
+@media (max-width:1100px){.grid.pillars{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}}
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none !important;transition:none !important;scroll-behavior:auto !important}
   .ring{display:none}
@@ -234,7 +238,7 @@ footer p+p{margin-top:6px;font-size:12px;opacity:.8}
   </div>
 
   <div class="wrap">
-    <div class="grid">
+    <div class="grid pillars">
       <div class="card">
         <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#3B4A3F" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.6-6.5 10-6.5S22 12 22 12s-3.6 6.5-10 6.5S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>
         <h3>Autoconhecimento</h3>
